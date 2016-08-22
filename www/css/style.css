@@ -11,7 +11,7 @@ h1 {
     font-size: 40px;
     padding: 0;
     margin: 200px 0 30px 0;
-    color: white;
+    color: #FF6600;
 }
 
 /**
@@ -55,7 +55,7 @@ h1 {
   color: #fff;
   text-shadow: 0 1px none;
   vertical-align: middle;
-  background-color: #1284ff;
+  background-color: #98fb98;
   -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
