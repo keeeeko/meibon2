@@ -17,5 +17,15 @@
         "cordova-plugin-contacts@1.1.0",
         "cordova-plugin-splashscreen@2.1.0",
         "cordova-plugin-device@1.0.1"
-    ]
+    ],
+    "title-ja": "めいぼん",
+    "title-en": "",
+    "description-ja": "",
+    "description-en": "",
+    "category": "User Template",
+    "platform": [
+        "android",
+        "ios"
+    ],
+    "name": "generated-1471854170-57ba95bd7e2193614491800c"
 }
