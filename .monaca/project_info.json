@@ -18,7 +18,7 @@
         "cordova-plugin-splashscreen@2.1.0",
         "cordova-plugin-device@1.0.1"
     ],
-    "title-ja": "めいぼんぼん",
+    "title-ja": "めいめい",
     "title-en": "",
     "description-ja": "",
     "description-en": "",
@@ -27,5 +27,5 @@
         "android",
         "ios"
     ],
-    "name": "generated-1471922636-57ba95bd7e2193614491800c"
+    "name": "generated-1471923965-57ba95bd7e2193614491800c"
 }
