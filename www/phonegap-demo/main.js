@@ -92,6 +92,7 @@ function fail(msg) {
     alert(msg);
 }
 
+
 function show_pic() {
     navigator.camera.getPicture(dump_pic, fail, {
         quality : 50,
@@ -107,7 +108,18 @@ function getPhoto () {
         navigator.camera.getPicture(onSuccess, onFail, 
           { quality: 50,destinationType: Camera.DestinationType.FILE_URI,
           sourceType: navigator.camera.PictureSourceType.SAVEDPHOTOALBUM });
-      }
+          
+}
+
+function show () {
+    // 画像表示
+    var reader = new FileReader();
+    reader.onload = function() {
+      var img_src = $('<img>').attr('src', reader.result);
+      $('span').html(img_src);
+    }
+    reader.readAsDataURL(file);
+}
 
 
 function close() {
