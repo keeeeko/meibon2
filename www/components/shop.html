@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<!--
+       Licensed to the Apache Software Foundation (ASF) under one
+       or more contributor license agreements.  See the NOTICE file
+       distributed with this work for additional information
+       regarding copyright ownership.  The ASF licenses this file
+       to you under the Apache License, Version 2.0 (the
+       "License"); you may not use this file except in 
+       with the License.  You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing,
+       software distributed under the License is distributed on an
+       "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+       KIND, either express or implied.  See the License for the
+       specific language governing permissions and limitations
+       under the License.
+-->
+<html>
+  <head>
+    <title>PhoneGap</title>
+  
+    <meta name="viewporｔ" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script type="text/javascript" src="components/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="components/loader.css">
+    <script type="text/javascript">
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady(){
+            console.log("PhoneGap is ready.");
+            monaca.updateUIStyle("header", "title", "PhoneGap Demo");
+            monaca.updateUIStyle("tapme-button", "disable", true);
+        }
+    </script>
+    <link rel="stylesheet" href="phonegap-demo/master.css" type="text/css" media="screen" title="no title">
+    <script type="text/javascript" charset="utf-8" src="phonegap-demo/main.js"></script>
+  </head>
+  <body STYLE="overflow: hidden;">
+  <body onload="init();" id="stage" class="theme" bgcolor="#ffffff" STYLE="overflow: hidden;"
+   color="#ff0000">
+
+    <h1></h1>
+    <h2></h2>
+    
+        <h4><p><font color="black">
+        <br><center><font size="7">SHOP</font></center><br/>
+          <table border="1">
+ <tr>
+  <td colspan="2" width="200" height="100"><font size="5">登録人数上限UP</font></td>
+   <tr><font="3">
+  <td width="50" height="50">＋10人</td>
+  <th  width="60" height="60"><div>
+ <input type="button" style="width:70%;padding:10px;font-size:25px;" value="￥100" />
+ </div></th>
+ </tr>
+<tr><td width="50" height="50">＋20人</td>
+  <th  width="60" height="60"><div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; background-color:#ff6347;">￥200</div></th>
+ </tr>
+ <tr><td width="50" height="50">＋30人</td>
+  <th  width="60" height="60"><div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; background-color:#ff6347;">￥300</div></th>
+ </tr>
+ <tr><td width="50" height="50">＋40人</td>
+  <th  width="60" height="60"><div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; background-color:#ff6347;">￥400</div></th>
+ </tr></font>
+</table>
+</font></p>
+     </div>
+    
+      
+   
+   
+    <dl>
+    <dt></dt><dd id=""></dd>
+    </dl>
+    <a href="" class="btn large" onclick="toggleCompass();return false;">広告</a>
+    <div id="viewport" class="viewport" style="display: none;">
+      <img style="width:70px;height:60px" id="test_img" src="" />
+  </body>
+</html>
