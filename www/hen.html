@@ -26,6 +26,30 @@
     <script type="text/javascript" src="components/loader.js"></script>
     <link rel="stylesheet" type="text/css" href="components/loader.css">
     <script type="text/javascript">
+      document.addEventListener("deviceready", onDeviceReady, false);
+
+      function onDeviceReady () {
+         window.alert ('Loading Cordova is completed');
+      }
+
+      function onSuccess (imageURI) {
+        var largeImage = document.getElementById ('picture');
+        largeImage.style.display = 'block';
+        largeImage.src = imageURI;
+      }
+
+      function show_pic () {
+        //Specify the source to get the photos.
+        navigator.camera.getPicture(onSuccess, onFail, 
+          { quality: 50,destinationType: Camera.DestinationType.FILE_URI,
+          sourceType: navigator.camera.PictureSourceType.SAVEDPHOTOALBUM });
+      }
+
+      function onFail (message) {
+          alert('An error occured: ' + message);
+      }
+    </script>
+    <script type="text/javascript">
         document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady(){
             console.log("PhoneGap is ready.");
@@ -42,7 +66,9 @@
     <input modifier="underbar" ng-model="山田　太郎" placeholder="Your name" float style="position:absolute; top:100px; right:90px" >
   </div>
   <div>
-    <img src="http://www.kana-hpga.or.jp/img/SellBook/NoImage.png" width="200" height="300" style="position:absolute; top:150px; right:55px" border="5" >
+    <a href="#" onclick="getPhoto();"><img src=http://www.kana-hpga.or.jp/img/SellBook/NoImage.png" width="200" height="300" style="position:absolute; top:150px; right:55px" border="5></a>
+
+    
   </div>
   <div>
     <img src="http://icon-rainbow.com/i/icon_01911/icon_019110_256.jpg" width="45" height="40" style="position:absolute; top:500px; right:30px" />

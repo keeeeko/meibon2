@@ -95,11 +95,20 @@ function fail(msg) {
 function show_pic() {
     navigator.camera.getPicture(dump_pic, fail, {
         quality : 50,
-        destinationType: Camera.DestinationType.DATA_URL,
+        destinationType: Camera.DestinationType.FILE_URL,
         targetWidth: 100,
         targetHeight: 100
-    });
+         .FILE_URI });
+
 }
+
+function getPhoto () {
+        //Specify the source to get the photos.
+        navigator.camera.getPicture(onSuccess, onFail, 
+          { quality: 50,destinationType: Camera.DestinationType.FILE_URI,
+          sourceType: navigator.camera.PictureSourceType.SAVEDPHOTOALBUM });
+      }
+
 
 function close() {
     var viewport = document.getElementById('viewport');
