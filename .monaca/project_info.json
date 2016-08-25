@@ -18,7 +18,7 @@
         "cordova-plugin-splashscreen@2.1.0",
         "cordova-plugin-device@1.0.1"
     ],
-    "title-ja": "meibonn",
+    "title-ja": "meibon",
     "title-en": "",
     "description-ja": "",
     "description-en": "",
@@ -27,5 +27,5 @@
         "android",
         "ios"
     ],
-    "name": "generated-1472103531-57ba95bd7e2193614491800c"
+    "name": "generated-1472106863-57ba95bd7e2193614491800c"
 }
