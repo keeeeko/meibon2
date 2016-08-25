@@ -29,17 +29,7 @@ var getLocation = function() {
     navigator.geolocation.getCurrentPosition(suc, locFail);
 };
 
-var beep = function() {
-    var my_media = new Media("beep.wav",
-        // success callback
-        function() {
-            console.log("playAudio():Audio Success");
-        },
-        // error callback
-        function(err) {
-            console.log("playAudio():Audio Error: "+err);
-    }).play();
-};
+
 
 var vibrate = function() {
     navigator.notification.vibrate(500);
@@ -79,6 +69,7 @@ var preventBehavior = function(e) {
     e.preventDefault();
 };
 
+
 function dump_pic(data) {
     var viewport = document.getElementById('viewport');
     viewport.style.display = "";
@@ -88,17 +79,13 @@ function dump_pic(data) {
     document.getElementById("test_img").src = "data:image/jpeg;base64," + data;
 }
 
-function fail(msg) {
-    alert(msg);
-}
-
 
 function show_pic() {
     navigator.camera.getPicture(dump_pic, fail, {
         quality : 50,
         destinationType: Camera.DestinationType.FILE_URL,
-        targetWidth: 100,
-        targetHeight: 100
+        targetWidth: 250,
+        targetHeight: 300
          .FILE_URI });
 
 }

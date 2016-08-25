@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <title>PhoneGap</title>
+  
+    <meta name="viewporｔ" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script type="text/javascript" src="components/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="components/loader.css">
+    <script type="text/javascript">
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady(){
+            console.log("PhoneGap is ready.");
+            monaca.updateUIStyle("header", "title", "PhoneGap Demo");
+            monaca.updateUIStyle("tapme-button", "disable", true);
+        }
+    </script>
+    <link rel="stylesheet" href="phonegap-demo/master.css" type="text/css" media="screen" title="no title">
+    <script type="text/javascript" charset="utf-8" src="phonegap-demo/main.js"></script>
+    
+    <script src="app.js"></script>
+     
+        
+    
+  </head>
+  
+
+  
+  <body onload="init();" id="stage" class="theme" bgcolor="#ffffff">
+ 
+ 
+    
+    <div id="info">
+        <h4>
+        <a href="hen.html"><img src="http://www.elude-maru.com/wp-content/uploads/2015/07/0-17.png" width="30" height="30"style="position:absolute; top:30px; right:50px"></a>
+        <a href=""><img src="http://icon-rainbow.com/i/icon_00161/icon_001610_64.png" width="30" height="30"style="position:absolute; top:30px; right:15px" ></a>
+        <a href="menu.html"><img src="https://www.kids-tokei.com/whats/img/icon_three.jpg" width="30" height="30"></a>
+        <span id="platform"> &nbsp;</span>
+        
+     </div>
+      <br>
+
+                                                   
+                                                   
+                                                   
+                                                   
+        <p style="display: inline"></p>                                         
+        <ul style="list-style-type: none" data-role="listview" data-inset="true" id="pic-list" width="250" height="300" border="5" style="position:absolute; top:120px; left:30px"></ul>                                           
+                                                   
+                                                   
+                                                   
+                                                   
+                                                   
+                                                    
+                                                    
+
+      
+        
+         
+         
+         
+         
+         
+         
+         
+         
+         
+
+    </dl>
+    <h1></h1>
+    <h2></h2> 
+    <div>
+    
+     <input id="del-button" type="button" value="すべて削除" onclick="delList()" style="position:absolute; top:400px; left:30px; " >
+    
+    </div>
+   
+    
+   <div align="center" style="position:absolute; top:450px; left:10px">
+   
+   
+    <dl>
+    <dt></dt><dd id=""></dd>
+    </dl>
+    
+    
+    <a href="" class="btn large" onclick="toggleCompass();return false;">広告</a>
+    <div id="viewport" class="viewport" style="display: none;">
+      <img style="width:70px;height:60px;" id="test_img" src="" />
+  </body>
+</html>

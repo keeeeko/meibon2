@@ -37,7 +37,7 @@ function successInitialTables(){
 function snapPicture () {
     //カメラ起動
     navigator.camera.getPicture (onSuccess, onFail, 
-        { quality: 50, destinationType: Camera.DestinationType.DATA_URL, targetWidth: 100, targetHeight: 100});
+        { quality: 50, destinationType: Camera.DestinationType.DATA_URL, targetWidth: 250, targetHeight: 300});
     
     //getPicture成功
     function onSuccess (imageData) {
@@ -125,7 +125,7 @@ function selectSuccess(tx, results) {
         var img = "<img src='" + results.rows.item(i).pic + "'>";
         var title = results.rows.item(i).title;
         var body = results.rows.item(i).body;
-        $("#pic-list").append("<li>" + img + "<h3>" + title + "</h3><p>" + body + "</p></li>");
+        $("#pic-list").append("<li>" + title + "<h3>" + img + "</h3><p>" + body + "</p></li>");
     }
 }
 
