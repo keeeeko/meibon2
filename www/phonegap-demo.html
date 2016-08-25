@@ -19,7 +19,13 @@
     </script>
     <link rel="stylesheet" href="phonegap-demo/master.css" type="text/css" media="screen" title="no title">
     <script type="text/javascript" charset="utf-8" src="phonegap-demo/main.js"></script>
+    
+    <script src="app.js"></script>
+    
+    
   </head>
+  
+
   
   <body onload="init();" id="stage" class="theme" bgcolor="#ffffff">
  
@@ -33,19 +39,24 @@
         <span id="platform"> &nbsp;</span>
         
      </div>
-      <br><dt><center><u><font size="4" >名前</center><?php
-                                                    if(isset($_POST[‘comment’])){
-                                                    $comment = $_POST[‘comment’];
-                                                    echo $comment;}?></u>
+      <br><dt><center><u><font size="4" >名前</center>
 
-                                                    
+                                                   
+                                                   
+                                                   
+                                                   
+                                                   
+        <ul style="list-style-type: none" data-role="listview" data-inset="true" id="pic-list" width="250" height="300" border="5" style="position:absolute; top:120px; left:30px"></ul>                                           
+                                                   
+                                                   
+                                                   
+                                                   
+                                                   
                                                     
                                                     
 
       
-        <div align="center"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSo2WWwQMPe35hhzBxsapsU3S77NIOMHwnGIhCf0nUoUMJ2WTlB"
-        width="250" height="300" border="5" style="position:absolute; top:120px; left:30px"></div>
-         
+        
          
          
          
@@ -60,6 +71,11 @@
     </dl>
     <h1></h1>
     <h2></h2>
+    <label>
+     <input id="del-button" type="button" value="すべて削除" onclick="delList()" style="position:absolute; top:500px; left:30px; opacity:0;" >
+     <img src="http://icon-rainbow.com/i/icon_01911/icon_019110_256.jpg" width="40px" height="40px" style="position:absolute; top:450px; left:30px" />
+    </label>
+    
    <div align="center" style="position:absolute; top:450px; left:10px">
    <p>
        コメント
