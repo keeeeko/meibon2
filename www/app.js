@@ -127,7 +127,7 @@ function selectSuccess(tx, results) {
         var img = "<img src='" + results.rows.item(i).pic + "'>";
         var title = results.rows.item(i).title;
         var body = results.rows.item(i).body;
-        $("#pic-list").append("<li><br/><h3>"  + "&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;" + title + "</h3>" + img + "<p>"  + "&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"  + body + "</p><br/><hr/></li>");
+        $("#pic-list").append("<li><br/><h3>"  + "&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;" + title + "</h3>" + img + "<p>"  + "&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"  + body + "</p><br/><hr/></li>");
        
         }
     }else{
