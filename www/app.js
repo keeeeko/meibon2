@@ -37,7 +37,7 @@ function successInitialTables(){
 function snapPicture () {
     //カメラ起動
     navigator.camera.getPicture (onSuccess, onFail, 
-        { quality: 50, destinationType: Camera.DestinationType.DATA_URL, targetWidth: 350, targetHeight: 400});
+        { quality: 50, destinationType: Camera.DestinationType.DATA_URL, targetWidth: 350, targetHeight: 300});
     
     //getPicture成功
     function onSuccess (imageData) {
@@ -121,12 +121,26 @@ function selectSuccess(tx, results) {
     
     // 一覧を描画
     var len = results.rows.length;
-    for (var i=0; i<len; i++) {
+//    alert("データ件数" + len);
+    if (len>0){
+        for (var i=0; i<len; i++) {
         var img = "<img src='" + results.rows.item(i).pic + "'>";
         var title = results.rows.item(i).title;
         var body = results.rows.item(i).body;
-        $("#pic-list").append("<li><br/>" + title + "<h3>" + img + "</h3><p>" + body + "</p><br/><hr/></li></center>");
+        $("#pic-list").append("<li><br/><h3>"  + "&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;" + title + "</h3>" + img + "<p>"  + "&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"  + body + "</p><br/><hr/></li>");
+       
+        }
+    }else{
+        $("#pic-list").append("<li><br/><h3>名前</h3><img style=\"width:250px; height:300px; \" border=\"5\" src=\"http://www.kana-hpga.or.jp/img/SellBook/NoImage.png\"></><p>特徴</p><br><hr/></li>");
     }
+//    for (var i=0; i<len; i++) {
+//        var img = "<img src='" + results.rows.item(i).pic + "'>";
+//        var title = results.rows.item(i).title;
+//        var body = results.rows.item(i).body;
+//        $("#pic-list").append("<li><br/><h3>" + title + "</h3>" + img + "<p>" + body + "</p><br/><hr/></li>");
+//       
+//    }
+//        $("pic-list").append("<li><br/><h3>" + 名前 + "</h3>" + "<img src=http://www.kana-hpga.or.jp/img/SellBook/NoImage.png>" + "<p>" + 特徴 + "</p><br><hr/></li>");
 }
 
 // ==========================================

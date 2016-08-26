@@ -108,6 +108,15 @@ h1 {
 }
 
 
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+
+
 div#footerArea {  
     position: fixed !important;  
     position: absolute;  
